@@ -37,6 +37,3 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-
-// SSH into the server using the following command:
-// ssh ec2-user@<EC2_PUBLIC_IP>i-0253dce6fa58ce3df
