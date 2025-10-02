@@ -1,0 +1,12 @@
+import requests
+
+url = "https://api.yourbank.com/banks"
+params = {
+    "bank_id": "gh.29.uk",
+    "endpoint_tag_id": "7uy8a7e4-6d02-40e3-a129-0b2bf89de8uh",
+    "operation_id": "OBPv4.0.0-getBanks",
+    "tag_name": "BankAccountTag1"
+}
+
+response = requests.get(url, params=params)
+print(response.json())
